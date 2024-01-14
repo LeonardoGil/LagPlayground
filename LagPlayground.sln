@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagPlaygroundForms", "LagPlaygroundForms\LagPlaygroundForms.csproj", "{31AD3599-AEC8-4C2F-BA51-B758C38DA093}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31AD3599-AEC8-4C2F-BA51-B758C38DA093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AD3599-AEC8-4C2F-BA51-B758C38DA093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AD3599-AEC8-4C2F-BA51-B758C38DA093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AD3599-AEC8-4C2F-BA51-B758C38DA093}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAA1D7A3-FD21-41A9-B3F7-6493BBB2026A}
+	EndGlobalSection
+EndGlobal
