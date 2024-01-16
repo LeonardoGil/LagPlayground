@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            basketballControl1 = new BasketballControl();
+            basketballControl = new BasketballControl();
             SuspendLayout();
             // 
-            // basketballControl1
+            // basketballControl
             // 
-            basketballControl1.Anchor = AnchorStyles.None;
-            basketballControl1.Location = new Point(383, 226);
-            basketballControl1.MinimumSize = new Size(24, 24);
-            basketballControl1.Name = "basketballControl1";
-            basketballControl1.Size = new Size(96, 96);
-            basketballControl1.TabIndex = 0;
+            basketballControl.Anchor = AnchorStyles.None;
+            basketballControl.Location = new Point(214, 278);
+            basketballControl.MinimumSize = new Size(24, 24);
+            basketballControl.Name = "basketballControl";
+            basketballControl.Size = new Size(96, 96);
+            basketballControl.TabIndex = 0;
             // 
             // BasketballForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(basketballControl1);
+            ClientSize = new Size(784, 561);
+            Controls.Add(basketballControl);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "BasketballForm";
             Text = "BasketballForms";
             ResumeLayout(false);
@@ -53,6 +54,6 @@
 
         #endregion
 
-        private BasketballControl basketballControl1;
+        private BasketballControl basketballControl;
     }
 }
