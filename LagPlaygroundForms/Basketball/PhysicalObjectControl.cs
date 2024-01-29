@@ -2,113 +2,23 @@
 {
     public class PhysicalObjectControl : UserControl
     {
-        public const int Gravity = 10;
+        protected const int Gravity = 10;
 
-        public double Weight { get; set; }
+        protected double Weight { get; set; }
 
-        /// <summary>
-        /// Velocidade m/s (metros por segundo)
-        /// </summary>
-        public int Acceleration { get; set; }
+        protected double AccelerationX { get; set; }
+     
+        protected double AccelerationY { get; set; }
 
-        /// <summary>
-        /// Força em Newtow
-        /// </summary>
-        public int Strength { get; set; }
+        protected double SpeedX { get; set; }
 
-        public DirectionEnum Direction { get; set; }
+        protected double SpeedY { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="gravity">m/s (Metros por segundo)</param>
-        public void ActionOfGravity(int gravity)
-        {
-            var strenght = (int)(gravity * Weight);
+        protected DirectionEnum Direction { get; set; }
 
-            ApplyStrenght(DirectionEnum.South, strenght);
-        }
+        protected double StrenghtX { get => Weight * AccelerationX; }
 
-        public void ApplyStrenght(DirectionEnum directionStrenght, int strenght)
-        {
-            switch (directionStrenght)
-            {
-                case DirectionEnum.North:
-
-
-
-
-                    break;
-                
-                
-                
-                
-                
-                
-                
-                
-                case DirectionEnum.South:
-                    break;
-                case DirectionEnum.East:
-                    break;
-                case DirectionEnum.West:
-                    break;
-                case DirectionEnum.NorthEast:
-                    break;
-                case DirectionEnum.NorthWest:
-                    break;
-                case DirectionEnum.SouthEast:
-                    break;
-                case DirectionEnum.SouthWest:
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        #region Apply Strenght Direction
-        private void ApplyStrenghtNorth(int strenght)
-        {
-            switch (Direction)
-            {
-                case DirectionEnum.North:
-                    Strength += strenght;
-                    break;
-
-                case DirectionEnum.South:
-                    Strength -= strenght;
-                    break;
-
-                case DirectionEnum.East:
-                    Strength = CalculatePerpendicularForce(Strength, strenght);
-                    break;
-
-                case DirectionEnum.West:
-                    break;
-
-                case DirectionEnum.NorthEast:
-                    break;
-                case DirectionEnum.NorthWest:
-                    break;
-                case DirectionEnum.SouthEast:
-                    break;
-                case DirectionEnum.SouthWest:
-                    break;
-                default:
-                    break;
-            }
-        }
-        #endregion
-
-        #region Calculations
-
-        private int CalculatePerpendicularForce(int strenghtX, int strenghtY)
-        {
-            return (int)Math.Sqrt((strenghtX * strenghtX) + (strenghtY * strenghtY));
-        }
-
-        #endregion
-
+        protected double StrenghtY { get => Weight * AccelerationY; }
     }
 
     public enum DirectionEnum
